@@ -184,3 +184,55 @@ The calculator should prevent division by zero and display a proper validation/e
 The calculator displays `Infinity`.
 
 **Status:** Open
+
+---
+
+## BUG-008
+
+**Bug Title:** Calculator displays `undefined` when equals button is pressed without input
+
+**Severity:** Medium
+
+**Priority:** Medium
+
+**Steps to Reproduce:**
+
+1. Open the calculator.
+2. Do not enter any number or operator.
+3. Click `=`.
+
+**Expected Result:**
+
+The calculator should handle the empty input gracefully and should not display a technical value such as `undefined`.
+
+**Actual Result:**
+
+The calculator displays `undefined`.
+
+**Status:** Open
+
+---
+
+## BUG-009
+
+**Bug Title:** Calculator displays `undefined` in calculation history for a negative number
+
+**Severity:** Medium
+
+**Priority:** Medium
+
+**Steps to Reproduce:**
+
+1. Enter `-2`
+2. Click `=`
+3. Check the calculation history.
+
+**Expected Result:**
+
+The calculator should display the negative number correctly in the calculation history and should not display `undefined`.
+
+**Actual Result:**
+
+The calculator displays `-2` correctly on the calculator display, but `undefined` is displayed in the calculation history.
+
+**Status:** Open
