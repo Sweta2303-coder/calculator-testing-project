@@ -155,3 +155,32 @@ The calculator should handle repeated clicks on the equals button appropriately 
 The calculator shows unexpected behavior when the equals button is clicked multiple times.
 
 **Status:** Open
+
+---
+
+## NEGATIVE TESTING 
+
+## BUG-007
+
+**Bug Title:** Calculator displays `Infinity` when dividing by zero
+
+**Severity:** Medium
+
+**Priority:** High
+
+**Steps to Reproduce:**
+
+1. Enter `10`
+2. Click `/`
+3. Enter `0`
+4. Click `=`
+
+**Expected Result:**
+
+The calculator should prevent division by zero and display a proper validation/error message instead of `Infinity`.
+
+**Actual Result:**
+
+The calculator displays `Infinity`.
+
+**Status:** Open
