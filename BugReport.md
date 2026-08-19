@@ -23,3 +23,135 @@ The calculator should not allow consecutive operators. It should display a prope
 The calculator accepts `5 + - 3` and displays `2`.
 
 **Status:** Open
+
+## BUG-002
+
+**Bug Title:** Calculator accepts multiple decimal points
+
+**Severity:** Medium
+
+**Priority:** Medium
+
+**Steps to Reproduce:**
+
+1. Enter `5`
+2. Click `.`
+3. Click `.`
+4. Enter `5`
+
+**Expected Result:**
+
+The calculator should not allow multiple decimal points within the same number. It should display a proper validation/error message.
+
+**Actual Result:**
+
+The calculator accepts multiple decimal points in the same number.
+
+**Status:** Open
+
+---
+
+## BUG-003
+
+**Bug Title:** Calculator does not properly handle division by zero
+
+**Severity:** High
+
+**Priority:** High
+
+**Steps to Reproduce:**
+
+1. Enter `10`
+2. Click `/`
+3. Enter `0`
+4. Click `=`
+
+**Expected Result:**
+
+The calculator should prevent division by zero and display a proper validation/error message.
+
+**Actual Result:**
+
+The calculator does not properly handle the division-by-zero operation.
+
+**Status:** Open
+
+---
+
+## BUG-004
+
+**Bug Title:** Calculator accepts an operator at the beginning of an expression
+
+**Severity:** Medium
+
+**Priority:** Medium
+
+**Steps to Reproduce:**
+
+1. Click `+`
+2. Enter `5`
+3. Click `=`
+
+**Expected Result:**
+
+The calculator should not allow an operator at the beginning of an expression. It should display a proper validation/error message.
+
+**Actual Result:**
+
+The calculator accepts the operator at the beginning of the expression.
+
+**Status:** Open
+
+---
+
+## BUG-005
+
+**Bug Title:** Calculator accepts an expression ending with an operator
+
+**Severity:** Medium
+
+**Priority:** Medium
+
+**Steps to Reproduce:**
+
+1. Enter `5`
+2. Click `+`
+3. Click `=`
+
+**Expected Result:**
+
+The calculator should not allow an expression to end with an operator. It should display a proper validation/error message.
+
+**Actual Result:**
+
+The calculator accepts the incomplete expression ending with an operator.
+
+**Status:** Open
+
+---
+
+## BUG-006
+
+**Bug Title:** Calculator shows unexpected behavior when the equals button is clicked multiple times
+
+**Severity:** Medium
+
+**Priority:** Medium
+
+**Steps to Reproduce:**
+
+1. Enter `5`
+2. Click `+`
+3. Enter `5`
+4. Click `=`
+5. Click `=` again
+
+**Expected Result:**
+
+The calculator should handle repeated clicks on the equals button appropriately without performing an unintended additional calculation.
+
+**Actual Result:**
+
+The calculator shows unexpected behavior when the equals button is clicked multiple times.
+
+**Status:** Open
